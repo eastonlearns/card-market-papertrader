@@ -5,6 +5,11 @@ All notable changes to this project are documented here. Format based on
 [SemVer](https://semver.org/).
 
 ## [Unreleased]
+### Added
+- **MCP server** (`grailbot.mcp_server`, FastMCP) exposing four read-only tools —
+  `grailbot_resolve_card`, `grailbot_value_card`, `grailbot_scan_opportunities`,
+  `grailbot_paper_trade` — so any MCP client can use the engine in natural language.
+  Runs keyless in mock mode. Docs in `docs/MCP.md`.
 
 ## [0.1.0] — 2026-07-24
 ### Added

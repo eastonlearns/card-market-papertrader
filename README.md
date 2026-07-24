@@ -59,6 +59,18 @@ simulated bankroll, records fair value / max bid / expected hold / exit / fees,
 and reports realized P&L, ROI, and win-rate — the evidence that the model has a
 real edge before anyone risks money.
 
+## Talk to it (MCP server)
+GrailBot ships an [MCP](https://modelcontextprotocol.io) server, so you can use the
+engine from Claude Desktop, Cursor, or any MCP client in natural language — with no keys:
+```bash
+pip install -e ".[mcp]"
+python -m grailbot.mcp_server
+```
+Four read-only tools: `grailbot_resolve_card`, `grailbot_value_card`,
+`grailbot_scan_opportunities`, `grailbot_paper_trade`. Then ask *"resolve and value
+2024 Donruss Optic Jaden Daniels Blue Glitter #248 at $95."* Setup + client config in
+[docs/MCP.md](docs/MCP.md).
+
 ## Going live
 ```bash
 cp .env.example .env        # add your OWN eBay + price-vendor keys
