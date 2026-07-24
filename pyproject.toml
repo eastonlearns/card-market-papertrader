@@ -1,0 +1,20 @@
+[project]
+name = "grailbot"
+version = "0.1.0"
+description = "GrailBot — trading-card value-gap engine (eBay sold-comp arbitrage)"
+requires-python = ">=3.10"
+dependencies = []            # mock mode is stdlib-only; live deps in requirements.txt
+
+[project.optional-dependencies]
+live = ["httpx>=0.27", "python-dotenv>=1.0", "tenacity>=8.2", "rich>=13.7"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+grailbot = "grailbot.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
