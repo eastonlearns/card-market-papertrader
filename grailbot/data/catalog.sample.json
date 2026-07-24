@@ -1,0 +1,50 @@
+{
+  "_note": "Sample catalog. In production, replace/extend from JunkWaxHero/CardLists JSON checklists. Parallels are scoped PER PRODUCT so the same color word resolves differently (Blue Glitter is Optic-only; Blue Sparkle is Prizm/Mosaic-only).",
+  "products": {
+    "donruss optic": {
+      "aliases": ["donruss optic", "panini donruss optic", "optic"],
+      "parallels": {
+        "blue glitter": {"rarity": "SSP", "serial": null},
+        "red /125":     {"rarity": "SP",  "serial": 125},
+        "purple shock": {"rarity": "common", "serial": null},
+        "blue hyper":   {"rarity": "common", "serial": null},
+        "holo":         {"rarity": "common", "serial": null}
+      }
+    },
+    "prizm": {
+      "aliases": ["panini prizm", "prizm"],
+      "parallels": {
+        "blue sparkle": {"rarity": "SSP", "serial": 96},
+        "silver":       {"rarity": "common", "serial": null},
+        "base":         {"rarity": "common", "serial": null}
+      }
+    },
+    "mosaic": {
+      "aliases": ["panini mosaic", "mosaic"],
+      "parallels": {
+        "gold sparkle":  {"rarity": "SSP", "serial": 24},
+        "blue sparkle":  {"rarity": "SP",  "serial": 96},
+        "red sparkle":   {"rarity": "SP",  "serial": null},
+        "reactive blue": {"rarity": "common", "serial": null}
+      }
+    },
+    "topps chrome ucc": {
+      "aliases": ["topps chrome uefa club competitions", "topps chrome ucc", "topps chrome uefa", "chrome ucc"],
+      "parallels": {
+        "white refractor":    {"rarity": "SSP", "serial": 30},
+        "negative refractor": {"rarity": "SP",  "serial": null},
+        "aqua mini-diamonds": {"rarity": "SP",  "serial": 199},
+        "x-fractor":          {"rarity": "common", "serial": null},
+        "refractor":          {"rarity": "common", "serial": null}
+      }
+    }
+  },
+  "players": [
+    {"name": "Jayden Daniels", "sport": "football", "catalyst": 0.7,
+     "aliases": ["jayden daniels", "jaden daniels"], "misspellings": ["jaden daniels"]},
+    {"name": "Pau Cubarsi", "sport": "soccer", "catalyst": 0.9,
+     "aliases": ["pau cubarsi", "pau cubarsí", "cubarsi", "cubarsí"], "misspellings": []},
+    {"name": "Franco Mastantuono", "sport": "soccer", "catalyst": 0.8,
+     "aliases": ["franco mastantuono", "mastantuono", "mastantuano"], "misspellings": ["mastantuano"]}
+  ]
+}
